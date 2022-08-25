@@ -1,7 +1,4 @@
-const { SlashCommandRoleOption } = require("discord.js");
-
 const { Client } = require("discord.js");
-
 const client = new Client({ intents: ["Guilds"] });
 
 client.config = require("./config.json");
