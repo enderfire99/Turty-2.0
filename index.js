@@ -14,9 +14,15 @@ const client = new Client({
 });
 
 const { loadEvents } = require("./Handlers/eventHandler");
+const { connect } = require("mongoose");
+
 client.config = require("./config.json");
 client.events = new Collection();
 client.commands = new Collection();
+
+connect(client.config.MongoURL)
+  .then(() => console.log("Truty esta conectado a MONGO"))
+  .catch((err) => console.log(err));
 
 loadEvents(client);
 

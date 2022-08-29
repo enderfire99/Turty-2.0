@@ -21,6 +21,7 @@
     "ascii-table": "^0.0.9",
     "discord.js": "^14.3.0",
     "glob": "^8.0.3",
+    "mongoose": "^6.5.3",
     "promisify": "^0.0.3"
   }
 }
