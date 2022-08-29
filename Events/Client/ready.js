@@ -1,3 +1,5 @@
+const { loadCommands } = require("../../Handlers/commandHandler");
+
 module.exports = {
   name: "ready",
   once: true,
@@ -8,5 +10,7 @@ module.exports = {
     client.user.setActivity(
       `Ahora mismo en ${client.guilds.cache.size} servidores`
     );
+
+    loadCommands(client);
   },
 };

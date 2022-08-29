@@ -14,9 +14,9 @@ const client = new Client({
 });
 
 const { loadEvents } = require("./Handlers/eventHandler");
-
 client.config = require("./config.json");
 client.events = new Collection();
+client.commands = new Collection();
 
 loadEvents(client);
 
