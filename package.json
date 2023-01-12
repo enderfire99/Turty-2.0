@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "discord.js": "^14.3.0",
     "glob": "^8.0.3",
     "mongoose": "^6.5.3",
+    "nodemon": "^2.0.20",
     "promisify": "^0.0.3"
   }
 }
